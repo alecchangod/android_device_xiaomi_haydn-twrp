@@ -149,6 +149,11 @@ TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_LPDUMP := true
 TW_INCLUDE_LPTOOLS := true
 
+# PBRP specific build flags
+PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_DISABLE_DEFAULT_TREBLE_COMP := true
+
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
 ifeq ($(TW_DEVICE_VERSION),)
