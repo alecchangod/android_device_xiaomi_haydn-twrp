@@ -19,12 +19,15 @@ DEVICE_PATH := device/xiaomi/haydn
 # Inherit from device.mk configuration
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/pb/config/common.mk)
+
 # Release name
 PRODUCT_RELEASE_NAME := haydn
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := haydn
-PRODUCT_NAME := twrp_haydn
+PRODUCT_NAME := pb_haydn
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi K40 Pro
 PRODUCT_MANUFACTURER := Xiaomi
